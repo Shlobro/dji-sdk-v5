@@ -1,0 +1,100 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  org.json.JSONObject
+ */
+package dji.sdk.keyvalue.value.cloudaccess;
+
+import dji.jni.JNIProguardKeepTag;
+import dji.sdk.keyvalue.value.ByteStream;
+import dji.sdk.keyvalue.value.base.DJIValue;
+import dji.sdk.keyvalue.value.cloudaccess.CloudStreamPushURLType;
+import dji.sdk.keyvalue.value.cloudaccess.CloudVideoStreamQuality;
+import org.json.JSONObject;
+
+public class CloudLiveStartRequestInfo
+implements DJIValue,
+JNIProguardKeepTag,
+ByteStream {
+    String video_id;
+    CloudVideoStreamQuality video_quality;
+    CloudStreamPushURLType url_type;
+    String url;
+    Boolean force_switch;
+
+    public CloudLiveStartRequestInfo() {
+    }
+
+    public CloudLiveStartRequestInfo(String string, CloudVideoStreamQuality cloudVideoStreamQuality, CloudStreamPushURLType cloudStreamPushURLType, String string2, Boolean bl) {
+    }
+
+    public static CloudLiveStartRequestInfo fromJson(String string) {
+        return null;
+    }
+
+    @Override
+    public JSONObject toJson() {
+        return null;
+    }
+
+    @Override
+    public int serializedLength() {
+        return 0;
+    }
+
+    @Override
+    public int toBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    @Override
+    public byte[] toBytes() {
+        return null;
+    }
+
+    @Override
+    public int fromBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    public String getVideo_id() {
+        return null;
+    }
+
+    public void setVideo_id(String string) {
+    }
+
+    public CloudVideoStreamQuality getVideo_quality() {
+        return null;
+    }
+
+    public void setVideo_quality(CloudVideoStreamQuality cloudVideoStreamQuality) {
+    }
+
+    public CloudStreamPushURLType getUrl_type() {
+        return null;
+    }
+
+    public void setUrl_type(CloudStreamPushURLType cloudStreamPushURLType) {
+    }
+
+    public String getUrl() {
+        return null;
+    }
+
+    public void setUrl(String string) {
+    }
+
+    public Boolean getForce_switch() {
+        return null;
+    }
+
+    public void setForce_switch(Boolean bl) {
+    }
+
+    public String toString() {
+        return null;
+    }
+}
+

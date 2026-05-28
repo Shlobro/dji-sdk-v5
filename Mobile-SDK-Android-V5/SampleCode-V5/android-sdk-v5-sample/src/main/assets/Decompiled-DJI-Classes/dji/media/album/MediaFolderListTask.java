@@ -1,0 +1,66 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package dji.media.album;
+
+import dji.media.album.MediaBaseTask;
+import dji.sdk.keyvalue.value.file.FileDataRequest;
+import dji.sdk.keyvalue.value.file.FileListRequest;
+import dji.sdk.keyvalue.value.file.FileTaskRequest;
+import dji.sdk.keyvalue.value.file.FileTaskResponse;
+import dji.sdk.keyvalue.value.media.MediaFile;
+import dji.sdk.keyvalue.value.media.MediaFolder;
+import java.util.List;
+
+public class MediaFolderListTask
+extends MediaBaseTask
+implements MediaBaseTask.ITaskResponseHolder {
+    private IFolderListTaskHolder holder;
+
+    private MediaFolderListTask(FileTaskRequest fileTaskRequest) {
+    }
+
+    public static MediaFolderListTask create(FileListRequest fileListRequest) {
+        return null;
+    }
+
+    public static MediaFolderListTask create(List<FileListRequest> list) {
+        return null;
+    }
+
+    public void setHolder(IFolderListTaskHolder iFolderListTaskHolder) {
+    }
+
+    @Override
+    public void onListReqResponse(List<MediaFile> list) {
+    }
+
+    @Override
+    public void onListReqForward(FileListRequest fileListRequest, int n, int n2) {
+    }
+
+    @Override
+    public void onFolderListReqResponse(List<MediaFolder> list) {
+    }
+
+    @Override
+    public void onFolderListReqForward(FileListRequest fileListRequest, int n, int n2) {
+    }
+
+    @Override
+    public void onDataReqResponse(FileDataRequest fileDataRequest, byte[] byArray, long l2, long l3, long l4) {
+    }
+
+    @Override
+    public void onDataReqForward(FileDataRequest fileDataRequest, int n, int n2) {
+    }
+
+    @Override
+    public void onRequestTearDown(int n, FileTaskResponse fileTaskResponse) {
+    }
+
+    public static interface IFolderListTaskHolder {
+        public void taskFetchedFiles(int var1, List<MediaFolder> var2);
+    }
+}
+

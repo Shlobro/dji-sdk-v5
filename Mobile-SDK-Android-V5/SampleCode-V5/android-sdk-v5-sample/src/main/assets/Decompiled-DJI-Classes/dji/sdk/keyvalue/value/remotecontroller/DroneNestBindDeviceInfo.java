@@ -1,0 +1,83 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  org.json.JSONObject
+ */
+package dji.sdk.keyvalue.value.remotecontroller;
+
+import dji.jni.JNIProguardKeepTag;
+import dji.sdk.keyvalue.value.ByteStream;
+import dji.sdk.keyvalue.value.base.DJIValue;
+import dji.sdk.keyvalue.value.remotecontroller.DroneNestBindDeviceType;
+import org.json.JSONObject;
+
+public class DroneNestBindDeviceInfo
+implements DJIValue,
+JNIProguardKeepTag,
+ByteStream {
+    DroneNestBindDeviceType type;
+    Integer index;
+    String callSign;
+
+    public DroneNestBindDeviceInfo() {
+    }
+
+    public DroneNestBindDeviceInfo(DroneNestBindDeviceType droneNestBindDeviceType, Integer n, String string) {
+    }
+
+    public static DroneNestBindDeviceInfo fromJson(String string) {
+        return null;
+    }
+
+    @Override
+    public JSONObject toJson() {
+        return null;
+    }
+
+    @Override
+    public int serializedLength() {
+        return 0;
+    }
+
+    @Override
+    public int toBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    @Override
+    public byte[] toBytes() {
+        return null;
+    }
+
+    @Override
+    public int fromBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    public DroneNestBindDeviceType getType() {
+        return null;
+    }
+
+    public void setType(DroneNestBindDeviceType droneNestBindDeviceType) {
+    }
+
+    public Integer getIndex() {
+        return null;
+    }
+
+    public void setIndex(Integer n) {
+    }
+
+    public String getCallSign() {
+        return null;
+    }
+
+    public void setCallSign(String string) {
+    }
+
+    public String toString() {
+        return null;
+    }
+}
+

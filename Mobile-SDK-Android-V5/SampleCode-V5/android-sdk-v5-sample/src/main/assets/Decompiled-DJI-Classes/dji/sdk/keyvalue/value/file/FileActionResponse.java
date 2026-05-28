@@ -1,0 +1,92 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  org.json.JSONObject
+ */
+package dji.sdk.keyvalue.value.file;
+
+import dji.jni.JNIProguardKeepTag;
+import dji.sdk.keyvalue.value.ByteStream;
+import dji.sdk.keyvalue.value.base.DJIValue;
+import dji.sdk.keyvalue.value.file.FileLocation;
+import dji.sdk.keyvalue.value.file.FilePackage;
+import org.json.JSONObject;
+
+public class FileActionResponse
+implements DJIValue,
+JNIProguardKeepTag,
+ByteStream {
+    FileLocation location;
+    FilePackage succeeded;
+    FilePackage failed;
+    Boolean allSucceeded;
+
+    public FileActionResponse() {
+    }
+
+    public FileActionResponse(FileLocation fileLocation, FilePackage filePackage, FilePackage filePackage2, Boolean bl) {
+    }
+
+    public static FileActionResponse fromJson(String string) {
+        return null;
+    }
+
+    @Override
+    public JSONObject toJson() {
+        return null;
+    }
+
+    @Override
+    public int serializedLength() {
+        return 0;
+    }
+
+    @Override
+    public int toBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    @Override
+    public byte[] toBytes() {
+        return null;
+    }
+
+    @Override
+    public int fromBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    public FileLocation getLocation() {
+        return null;
+    }
+
+    public void setLocation(FileLocation fileLocation) {
+    }
+
+    public FilePackage getSucceeded() {
+        return null;
+    }
+
+    public void setSucceeded(FilePackage filePackage) {
+    }
+
+    public FilePackage getFailed() {
+        return null;
+    }
+
+    public void setFailed(FilePackage filePackage) {
+    }
+
+    public Boolean getAllSucceeded() {
+        return null;
+    }
+
+    public void setAllSucceeded(Boolean bl) {
+    }
+
+    public String toString() {
+        return null;
+    }
+}
+
