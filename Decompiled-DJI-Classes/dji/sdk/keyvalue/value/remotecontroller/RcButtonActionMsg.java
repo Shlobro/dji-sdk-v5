@@ -1,0 +1,84 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  org.json.JSONObject
+ */
+package dji.sdk.keyvalue.value.remotecontroller;
+
+import dji.jni.JNIProguardKeepTag;
+import dji.sdk.keyvalue.value.ByteStream;
+import dji.sdk.keyvalue.value.base.DJIValue;
+import dji.sdk.keyvalue.value.remotecontroller.RcButtonAction;
+import dji.sdk.keyvalue.value.remotecontroller.RcCustomizableButton;
+import org.json.JSONObject;
+
+public class RcButtonActionMsg
+implements DJIValue,
+JNIProguardKeepTag,
+ByteStream {
+    RcCustomizableButton buttonID;
+    Integer buttonActionValue;
+    RcButtonAction buttonAction;
+
+    public RcButtonActionMsg() {
+    }
+
+    public RcButtonActionMsg(RcCustomizableButton rcCustomizableButton, Integer n, RcButtonAction rcButtonAction) {
+    }
+
+    public static RcButtonActionMsg fromJson(String string) {
+        return null;
+    }
+
+    @Override
+    public JSONObject toJson() {
+        return null;
+    }
+
+    @Override
+    public int serializedLength() {
+        return 0;
+    }
+
+    @Override
+    public int toBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    @Override
+    public byte[] toBytes() {
+        return null;
+    }
+
+    @Override
+    public int fromBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    public RcCustomizableButton getButtonID() {
+        return null;
+    }
+
+    public void setButtonID(RcCustomizableButton rcCustomizableButton) {
+    }
+
+    public Integer getButtonActionValue() {
+        return null;
+    }
+
+    public void setButtonActionValue(Integer n) {
+    }
+
+    public RcButtonAction getButtonAction() {
+        return null;
+    }
+
+    public void setButtonAction(RcButtonAction rcButtonAction) {
+    }
+
+    public String toString() {
+        return null;
+    }
+}
+

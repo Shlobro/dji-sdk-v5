@@ -1,0 +1,120 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package dji.sdk.keyvalue.key;
+
+import dji.sdk.keyvalue.converter.DJIValueConverter;
+import dji.sdk.keyvalue.converter.EmptyValueConverter;
+import dji.sdk.keyvalue.converter.SingleValueConverter;
+import dji.sdk.keyvalue.key.ComponentType;
+import dji.sdk.keyvalue.key.DJIActionKeyInfo;
+import dji.sdk.keyvalue.key.DJIKeyInfo;
+import dji.sdk.keyvalue.key.SubComponentType;
+import dji.sdk.keyvalue.value.common.CalibrationFileStatus;
+import dji.sdk.keyvalue.value.common.CalibrationFileStatusMsg;
+import dji.sdk.keyvalue.value.common.CalibrationFileUpdatingInfo;
+import dji.sdk.keyvalue.value.common.CommonFileUpdatingInfo;
+import dji.sdk.keyvalue.value.common.EmptyMsg;
+import dji.sdk.keyvalue.value.common.SelfDiagnosticCapability;
+import dji.sdk.keyvalue.value.common.SelfDiagnosticCapabilityMsg;
+import dji.sdk.keyvalue.value.common.SelfDiagnosticErrorCode;
+import dji.sdk.keyvalue.value.common.SelfDiagnosticErrorCodeMsg;
+import dji.sdk.keyvalue.value.common.SelfDiagnosticInfo;
+import dji.sdk.keyvalue.value.common.SelfDiagnosticPartsInfo;
+import dji.sdk.keyvalue.value.common.SelfDiagnosticProgress;
+import dji.sdk.keyvalue.value.common.SelfDiagnosticRequestInfo;
+import dji.sdk.keyvalue.value.common.UpgradeNotifyInfo;
+import dji.sdk.keyvalue.value.crane.HoistStatus;
+import dji.sdk.keyvalue.value.crane.HoistStatusMsg;
+import java.util.ArrayList;
+import java.util.List;
+
+public class DJICraneKey {
+    protected static final List<DJIKeyInfo<?>> keyList = new ArrayList();
+    private static final ComponentType componentType = ComponentType.CRANE;
+    private static final SubComponentType subComponentType = SubComponentType.IGNORE;
+    public static final DJIKeyInfo<HoistStatus> KeyHoistStatus = new DJIKeyInfo<HoistStatus>(componentType.value(), subComponentType.value(), "HoistStatus", new SingleValueConverter<HoistStatus, HoistStatusMsg>(HoistStatus.class, HoistStatusMsg.class)).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCargoWeightMax = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CargoWeightMax", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCargoWeight = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CargoWeight", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCableForce = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CableForce", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCableAngle = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CableAngle", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCableLengthMax = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CableLengthMax", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCableLength = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CableLength", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCableSafeDistance = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CableSafeDistance", SingleValueConverter.IntegerConverter).canGet(true).canSet(true).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCableSpeed = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CableSpeed", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIActionKeyInfo<EmptyMsg, EmptyMsg> KeyCableDown = new DJIActionKeyInfo<EmptyMsg, EmptyMsg>(componentType.value(), subComponentType.value(), "CableDown", EmptyValueConverter.converter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIActionKeyInfo<EmptyMsg, EmptyMsg> KeyCableStop = new DJIActionKeyInfo<EmptyMsg, EmptyMsg>(componentType.value(), subComponentType.value(), "CableStop", EmptyValueConverter.converter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIActionKeyInfo<EmptyMsg, EmptyMsg> KeyCableUp = new DJIActionKeyInfo<EmptyMsg, EmptyMsg>(componentType.value(), subComponentType.value(), "CableUp", EmptyValueConverter.converter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCableSafeSpeed = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CableSafeSpeed", SingleValueConverter.IntegerConverter).canGet(true).canSet(true).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIActionKeyInfo<EmptyMsg, EmptyMsg> KeyHoistCali = new DJIActionKeyInfo<EmptyMsg, EmptyMsg>(componentType.value(), subComponentType.value(), "HoistCali", EmptyValueConverter.converter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIActionKeyInfo<EmptyMsg, EmptyMsg> KeyHoistCaliCancel = new DJIActionKeyInfo<EmptyMsg, EmptyMsg>(componentType.value(), subComponentType.value(), "HoistCaliCancel", EmptyValueConverter.converter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCableGroundDistance = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CableGroundDistance", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Long> KeyHoistActiveTime = new DJIKeyInfo(componentType.value(), subComponentType.value(), "HoistActiveTime", SingleValueConverter.LongConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyHoistUsageCount = new DJIKeyInfo(componentType.value(), subComponentType.value(), "HoistUsageCount", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCableTotalTravelDistance = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CableTotalTravelDistance", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<HoistStatus> KeyCableStatus = new DJIKeyInfo<HoistStatus>(componentType.value(), subComponentType.value(), "CableStatus", new SingleValueConverter<HoistStatus, HoistStatusMsg>(HoistStatus.class, HoistStatusMsg.class)).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIActionKeyInfo<EmptyMsg, EmptyMsg> KeyCableCut = new DJIActionKeyInfo<EmptyMsg, EmptyMsg>(componentType.value(), subComponentType.value(), "CableCut", EmptyValueConverter.converter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyCargoSwingSpeed = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CargoSwingSpeed", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Integer> KeyDeviceID = new DJIKeyInfo(componentType.value(), subComponentType.value(), "DeviceID", SingleValueConverter.IntegerConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Boolean> KeyConnection = new DJIKeyInfo(componentType.value(), subComponentType.value(), "Connection", SingleValueConverter.BooleanConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIActionKeyInfo<String, EmptyMsg> KeyForceUpdateCacheValue = new DJIActionKeyInfo(componentType.value(), subComponentType.value(), "ForceUpdateCacheValue", SingleValueConverter.StringConverter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIKeyInfo<CalibrationFileStatus> KeyCalibrationFileStatus = new DJIKeyInfo<CalibrationFileStatus>(componentType.value(), subComponentType.value(), "CalibrationFileStatus", new SingleValueConverter<CalibrationFileStatus, CalibrationFileStatusMsg>(CalibrationFileStatus.class, CalibrationFileStatusMsg.class)).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<CalibrationFileUpdatingInfo> KeyCalibrationFileUpdatingInfo = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CalibrationFileUpdatingInfo", new DJIValueConverter<CalibrationFileUpdatingInfo>(CalibrationFileUpdatingInfo.class)).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIActionKeyInfo<String, EmptyMsg> KeyUpdateCalibrationFile = new DJIActionKeyInfo(componentType.value(), subComponentType.value(), "UpdateCalibrationFile", SingleValueConverter.StringConverter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIKeyInfo<UpgradeNotifyInfo> KeyUpgradeNotifyInfo = new DJIKeyInfo(componentType.value(), subComponentType.value(), "UpgradeNotifyInfo", new DJIValueConverter<UpgradeNotifyInfo>(UpgradeNotifyInfo.class)).canGet(false).canSet(true).canListen(false).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Boolean> KeyEnforceUpgradeEnable = new DJIKeyInfo(componentType.value(), subComponentType.value(), "EnforceUpgradeEnable", SingleValueConverter.BooleanConverter).canGet(true).canSet(true).canListen(false).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Boolean> KeyIsInEnforceUpgradeStatus = new DJIKeyInfo(componentType.value(), subComponentType.value(), "IsInEnforceUpgradeStatus", SingleValueConverter.BooleanConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<Boolean> KeyIsDirectDevice = new DJIKeyInfo(componentType.value(), subComponentType.value(), "IsDirectDevice", SingleValueConverter.BooleanConverter).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIKeyInfo<CommonFileUpdatingInfo> KeyCommonFileUpdatingInfo = new DJIKeyInfo(componentType.value(), subComponentType.value(), "CommonFileUpdatingInfo", new DJIValueConverter<CommonFileUpdatingInfo>(CommonFileUpdatingInfo.class)).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIActionKeyInfo<String, EmptyMsg> KeyStartCommonFileUpdate = new DJIActionKeyInfo(componentType.value(), subComponentType.value(), "StartCommonFileUpdate", SingleValueConverter.StringConverter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIActionKeyInfo<EmptyMsg, EmptyMsg> KeyStopCommonFileUpdate = new DJIActionKeyInfo<EmptyMsg, EmptyMsg>(componentType.value(), subComponentType.value(), "StopCommonFileUpdate", EmptyValueConverter.converter, EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIActionKeyInfo<SelfDiagnosticInfo, SelfDiagnosticErrorCode> KeySelfDiagnosticMode = new DJIActionKeyInfo(componentType.value(), subComponentType.value(), "SelfDiagnosticMode", new DJIValueConverter<SelfDiagnosticInfo>(SelfDiagnosticInfo.class), new SingleValueConverter<SelfDiagnosticErrorCode, SelfDiagnosticErrorCodeMsg>(SelfDiagnosticErrorCode.class, SelfDiagnosticErrorCodeMsg.class)).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIActionKeyInfo<SelfDiagnosticRequestInfo, SelfDiagnosticErrorCode> KeySelfDiagnosticRequest = new DJIActionKeyInfo(componentType.value(), subComponentType.value(), "SelfDiagnosticRequest", new DJIValueConverter<SelfDiagnosticRequestInfo>(SelfDiagnosticRequestInfo.class), new SingleValueConverter<SelfDiagnosticErrorCode, SelfDiagnosticErrorCodeMsg>(SelfDiagnosticErrorCode.class, SelfDiagnosticErrorCodeMsg.class)).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIActionKeyInfo<EmptyMsg, SelfDiagnosticErrorCode> KeySelfDiagnosticCancel = new DJIActionKeyInfo<EmptyMsg, SelfDiagnosticErrorCode>(componentType.value(), subComponentType.value(), "SelfDiagnosticCancel", EmptyValueConverter.converter, new SingleValueConverter<SelfDiagnosticErrorCode, SelfDiagnosticErrorCodeMsg>(SelfDiagnosticErrorCode.class, SelfDiagnosticErrorCodeMsg.class)).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+    public static final DJIKeyInfo<SelfDiagnosticProgress> KeySelfDiagnosticStatus = new DJIKeyInfo(componentType.value(), subComponentType.value(), "SelfDiagnosticStatus", new DJIValueConverter<SelfDiagnosticProgress>(SelfDiagnosticProgress.class)).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false);
+    public static final DJIActionKeyInfo<SelfDiagnosticCapability, SelfDiagnosticPartsInfo> KeySelfDiagnosticParts = new DJIActionKeyInfo(componentType.value(), subComponentType.value(), "SelfDiagnosticParts", new SingleValueConverter<SelfDiagnosticCapability, SelfDiagnosticCapabilityMsg>(SelfDiagnosticCapability.class, SelfDiagnosticCapabilityMsg.class), new DJIValueConverter<SelfDiagnosticPartsInfo>(SelfDiagnosticPartsInfo.class)).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false);
+
+    static {
+        keyList.add(KeyHoistStatus);
+        keyList.add(KeyCargoWeightMax);
+        keyList.add(KeyCargoWeight);
+        keyList.add(KeyCableForce);
+        keyList.add(KeyCableAngle);
+        keyList.add(KeyCableLengthMax);
+        keyList.add(KeyCableLength);
+        keyList.add(KeyCableSafeDistance);
+        keyList.add(KeyCableSpeed);
+        keyList.add(KeyCableDown);
+        keyList.add(KeyCableStop);
+        keyList.add(KeyCableUp);
+        keyList.add(KeyCableSafeSpeed);
+        keyList.add(KeyHoistCali);
+        keyList.add(KeyHoistCaliCancel);
+        keyList.add(KeyCableGroundDistance);
+        keyList.add(KeyHoistActiveTime);
+        keyList.add(KeyHoistUsageCount);
+        keyList.add(KeyCableTotalTravelDistance);
+        keyList.add(KeyCableStatus);
+        keyList.add(KeyCableCut);
+        keyList.add(KeyCargoSwingSpeed);
+        keyList.add(KeyDeviceID);
+        keyList.add(KeyConnection);
+        keyList.add(KeyForceUpdateCacheValue);
+        keyList.add(KeyCalibrationFileStatus);
+        keyList.add(KeyCalibrationFileUpdatingInfo);
+        keyList.add(KeyUpdateCalibrationFile);
+        keyList.add(KeyUpgradeNotifyInfo);
+        keyList.add(KeyEnforceUpgradeEnable);
+        keyList.add(KeyIsInEnforceUpgradeStatus);
+        keyList.add(KeyIsDirectDevice);
+        keyList.add(KeyCommonFileUpdatingInfo);
+        keyList.add(KeyStartCommonFileUpdate);
+        keyList.add(KeyStopCommonFileUpdate);
+        keyList.add(KeySelfDiagnosticMode);
+        keyList.add(KeySelfDiagnosticRequest);
+        keyList.add(KeySelfDiagnosticCancel);
+        keyList.add(KeySelfDiagnosticStatus);
+        keyList.add(KeySelfDiagnosticParts);
+    }
+}
+

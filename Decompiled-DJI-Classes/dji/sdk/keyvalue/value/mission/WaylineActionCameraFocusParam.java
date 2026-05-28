@@ -1,0 +1,98 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  org.json.JSONObject
+ */
+package dji.sdk.keyvalue.value.mission;
+
+import dji.jni.JNIProguardKeepTag;
+import dji.sdk.keyvalue.value.ByteStream;
+import dji.sdk.keyvalue.value.base.DJIValue;
+import org.json.JSONObject;
+
+public class WaylineActionCameraFocusParam
+implements DJIValue,
+JNIProguardKeepTag,
+ByteStream {
+    Boolean isPointFocus;
+    Double focus_x;
+    Double focus_y;
+    Double width;
+    Double height;
+
+    public WaylineActionCameraFocusParam() {
+    }
+
+    public WaylineActionCameraFocusParam(Boolean bl, Double d2, Double d3, Double d4, Double d5) {
+    }
+
+    public static WaylineActionCameraFocusParam fromJson(String string) {
+        return null;
+    }
+
+    @Override
+    public JSONObject toJson() {
+        return null;
+    }
+
+    @Override
+    public int serializedLength() {
+        return 0;
+    }
+
+    @Override
+    public int toBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    @Override
+    public byte[] toBytes() {
+        return null;
+    }
+
+    @Override
+    public int fromBytes(byte[] byArray, int n) {
+        return 0;
+    }
+
+    public Boolean getIsPointFocus() {
+        return null;
+    }
+
+    public void setIsPointFocus(Boolean bl) {
+    }
+
+    public Double getFocus_x() {
+        return null;
+    }
+
+    public void setFocus_x(Double d2) {
+    }
+
+    public Double getFocus_y() {
+        return null;
+    }
+
+    public void setFocus_y(Double d2) {
+    }
+
+    public Double getWidth() {
+        return null;
+    }
+
+    public void setWidth(Double d2) {
+    }
+
+    public Double getHeight() {
+        return null;
+    }
+
+    public void setHeight(Double d2) {
+    }
+
+    public String toString() {
+        return null;
+    }
+}
+

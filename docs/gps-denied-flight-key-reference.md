@@ -18,11 +18,11 @@ Main local sources inspected:
 
 - `D:\Projects\DJI-SDK-Sample-App\app\src\main\assets\Decompiled-DJI-Classes\dji\keysdk\FlightControllerKey.java`
 - `D:\Projects\DJI-SDK-Sample-App\app\src\main\assets\Decompiled-DJI-Classes\dji\keysdk\RemoteControllerKey.java`
-- `D:\Projects\dji-sdk-v5\Mobile-SDK-Android-V5\SampleCode-V5\android-sdk-v5-sample\src\main\assets\Decompiled-DJI-Classes\dji\sdk\keyvalue\key\DJIFlightControllerKey.java`
-- `D:\Projects\dji-sdk-v5\Mobile-SDK-Android-V5\SampleCode-V5\android-sdk-v5-sample\src\main\assets\Decompiled-DJI-Classes\dji\sdk\keyvalue\key\DJIFlightAssistantKey.java`
-- `D:\Projects\dji-sdk-v5\Mobile-SDK-Android-V5\SampleCode-V5\android-sdk-v5-sample\src\main\assets\Decompiled-DJI-Classes\dji\sdk\keyvalue\key\DJIRtkMobileStationKey.java`
-- `D:\Projects\dji-sdk-v5\Mobile-SDK-Android-V5\SampleCode-V5\android-sdk-v5-sample\src\main\assets\Decompiled-DJI-Classes\dji\sdk\keyvalue\key\DJIRadarKey.java`
-- `D:\Projects\dji-sdk-v5\Mobile-SDK-Android-V5\SampleCode-V5\android-sdk-v5-sample\src\main\assets\Decompiled-DJI-Classes\dji\sdk\keyvalue\value\flightcontroller\*.java`
+- `D:\Projects\dji-sdk-v5\Decompiled-DJI-Classes\dji\sdk\keyvalue\key\DJIFlightControllerKey.java`
+- `D:\Projects\dji-sdk-v5\Decompiled-DJI-Classes\dji\sdk\keyvalue\key\DJIFlightAssistantKey.java`
+- `D:\Projects\dji-sdk-v5\Decompiled-DJI-Classes\dji\sdk\keyvalue\key\DJIRtkMobileStationKey.java`
+- `D:\Projects\dji-sdk-v5\Decompiled-DJI-Classes\dji\sdk\keyvalue\key\DJIRadarKey.java`
+- `D:\Projects\dji-sdk-v5\Decompiled-DJI-Classes\dji\sdk\keyvalue\value\flightcontroller\*.java`
 
 There are two key systems in the local projects:
 

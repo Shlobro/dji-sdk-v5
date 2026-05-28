@@ -3,8 +3,10 @@
 A consolidated reference of every SDK surface relevant to flying the M400 in GPS-degraded or GPS-denied environments, derived from the decompiled MSDK V5 classes at:
 
 ```
-Mobile-SDK-Android-V5/SampleCode-V5/android-sdk-v5-sample/src/main/assets/Decompiled-DJI-Classes/
+Decompiled-DJI-Classes/
 ```
+
+The repo copy excludes `dji-sdk-v5-aircraft-5.18.0.aar` because it exceeds GitHub's 100 MB file limit.
 
 All key paths below are under `dji.sdk.keyvalue.key.DJIFlightControllerKey` unless otherwise noted.
 
